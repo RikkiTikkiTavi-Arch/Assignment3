@@ -37,7 +37,7 @@
                                     <action selector="saveClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TZM-5d-pOb"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nameLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43L-Fv-bTm" userLabel="Name Label">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43L-Fv-bTm" userLabel="Name Label">
                                 <rect key="frame" x="154" y="605" width="85" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -51,7 +51,7 @@
                                     <action selector="deleteClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f3o-oR-4e0"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="birthdayLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUX-AN-Adg" userLabel="Birthday Label">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birthday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUX-AN-Adg" userLabel="Birthday Label">
                                 <rect key="frame" x="143.66666666666666" y="698" width="105.66666666666666" height="25.333333333333371"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25.333333333333371" id="rrC-rt-jci"/>
@@ -70,8 +70,9 @@
                             <constraint firstItem="WEg-hT-f6z" firstAttribute="trailing" secondItem="2Ac-Mh-q1f" secondAttribute="trailing" id="B7W-1i-ggp"/>
                             <constraint firstItem="1Fg-UP-ZqP" firstAttribute="baseline" secondItem="j7o-0F-NeB" secondAttribute="baseline" id="IeJ-n2-yXh"/>
                             <constraint firstItem="UUX-AN-Adg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="143.66666666666666" id="Js4-0c-Wdj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="j7o-0F-NeB" secondAttribute="trailing" constant="83" id="Mgg-10-eBa"/>
                             <constraint firstItem="UUX-AN-Adg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N5x-pb-wsn"/>
-                            <constraint firstItem="j7o-0F-NeB" firstAttribute="leading" secondItem="1Fg-UP-ZqP" secondAttribute="trailing" constant="88" id="NpS-E5-ikT"/>
+                            <constraint firstItem="j7o-0F-NeB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1Fg-UP-ZqP" secondAttribute="trailing" symbolic="YES" id="NpS-E5-ikT"/>
                             <constraint firstItem="1Fg-UP-ZqP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="W99-d9-CeI"/>
                             <constraint firstItem="WEg-hT-f6z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="162" id="ama-5C-MSu"/>
                             <constraint firstItem="WEg-hT-f6z" firstAttribute="leading" secondItem="2Ac-Mh-q1f" secondAttribute="leading" id="gkg-ZU-nrO"/>
