@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var birthdayTextField: UITextField!
     @IBOutlet weak var nameLabel: UILabel!
+    
     @IBOutlet weak var birthdayLabel: UILabel!
     
     
@@ -23,8 +24,10 @@ class ViewController: UIViewController {
     @IBAction func saveClicked(_ sender: Any) {
         
         guard let name = nameTextField.text, !name.isEmpty,
-                      let birthday = birthdayTextField.text, !birthday.isEmpty else { return }
+                      let birthday = birthdayTextField.text, !birthday.isEmpty
+        else { return }
                 
+        
                 UserDefaults.standard.set(name, forKey: "Name")
                 UserDefaults.standard.set(birthday, forKey: "Birthday")
                 
@@ -38,8 +41,13 @@ class ViewController: UIViewController {
         
         nameLabel.text = "Name"
         birthdayLabel.text = "Birthday"    }
+    
+    
     func loadSavedData(){
-        if let name = UserDefaults.standard.string(forKey: "Name"), let birthday = UserDefaults.standard.string(forKey: "Birthday") {
+        
+        if let name = UserDefaults.standard.string(forKey: "Name"), let birthday = UserDefaults.standard.string(forKey: "Birthday")
+            
+        {
             nameLabel.text = name
             birthdayLabel.text = birthday
         }
